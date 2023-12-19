@@ -130,8 +130,10 @@ function removeLeadingWhitespaces(/* value */ value) {
  *   removeTrailingWhitespaces('cat ') => 'cat'
  *   removeTrailingWhitespaces('\t\t\tHello, World! ') => '\t\t\tHello, World!'
  */
-function removeTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
+function removeTrailingWhitespaces(/* value */ value) {
+  // throw new Error('Not implemented');
+  const str = value.trimEnd();
+  return str;
 }
 
 /**
