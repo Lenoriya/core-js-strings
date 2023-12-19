@@ -333,8 +333,11 @@ function containsSubstring(/* str, substring */ str, substring) {
  *   countVowels('aEiOu') => 5
  *   countVowels('XYZ') => 1
  */
-function countVowels(/* str */) {
-  throw new Error('Not implemented');
+function countVowels(/* str */ str) {
+  // throw new Error('Not implemented');
+  const count = str.match(/[aeiouy]/gi); // Global search. Case-insensitive search. ignoreCase
+  if (count === null) return 0;
+  return count.length;
 }
 
 /**
