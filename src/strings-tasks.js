@@ -297,8 +297,9 @@ function reverseString(/* str */ str) {
  *   orderAlphabetically('textbook') => 'bekoottx'
  *   orderAlphabetically('abc123xyz') => '123abcxyz'
  */
-function orderAlphabetically(/* str */) {
-  throw new Error('Not implemented');
+function orderAlphabetically(/* str */ str) {
+  // throw new Error('Not implemented');
+  return str.split('').sort().join('');
 }
 
 /**
