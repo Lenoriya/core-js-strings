@@ -497,8 +497,10 @@ function unbracketTag(/* str */ str) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails(/* str */) {
-  throw new Error('Not implemented');
+function extractEmails(/* str */ str) {
+  // throw new Error('Not implemented');
+  const newStr = str.split(';');
+  return newStr;
 }
 
 /**
