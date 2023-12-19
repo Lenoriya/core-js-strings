@@ -476,8 +476,10 @@ function extractNameFromTemplate(/* value */ value) {
  *   unbracketTag('<span>') => 'span'
  *   unbracketTag('<a>') => 'a'
  */
-function unbracketTag(/* str */) {
-  throw new Error('Not implemented');
+function unbracketTag(/* str */ str) {
+  // throw new Error('Not implemented');
+  const newStr = str.slice(str.indexOf('<') + 1, str.lastIndexOf('>'));
+  return newStr;
 }
 
 /**
